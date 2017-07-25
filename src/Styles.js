@@ -15,9 +15,11 @@ const Styles = {
   AnimatedList: {
     scrollviewContainer: {
       height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+      overflow: 'visible',
     },
     scrollview: {
       height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+      overflow: 'visible',
     },
     scrollviewContentContainer: {
       justifyContent: 'center',
