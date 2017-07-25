@@ -28,8 +28,16 @@ const Styles = {
     container: {
       marginLeft: 10,
       borderRadius: CONSTANTS.ANIMATEDLIST_BORDERRADIUS,
+      backgroundColor: '#dedede',
+    },
+    imageThumb: {
+      height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+      width: CONSTANTS.ANIMATEDLIST_CARDWIDTH,
+      borderRadius: CONSTANTS.ANIMATEDLIST_BORDERRADIUS,
     },
     image: {
+      position: 'absolute',
+      top: 0,
       height: CONSTANTS.ANIMATEDLIST_HEIGHT,
       width: CONSTANTS.ANIMATEDLIST_CARDWIDTH,
       borderRadius: CONSTANTS.ANIMATEDLIST_BORDERRADIUS,
