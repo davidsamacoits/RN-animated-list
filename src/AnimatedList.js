@@ -8,8 +8,15 @@ import Styles from './Styles';
 class AnimatedList extends Component {
   render() {
     return (
-      <View>
-        {this.props.children}
+      <View style={Styles.AnimatedList.scrollviewContainer}>
+        <ScrollView
+          style={Styles.AnimatedList.scrollview}
+          horizontal
+          showsHorizontalScrollIndicator= {false}
+          contentContainerStyle={Styles.AnimatedList.scrollviewContentContainer}
+        >
+          {this.props.children}
+        </ScrollView>
       </View>
     );
   }

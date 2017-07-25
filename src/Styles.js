@@ -1,3 +1,9 @@
+const CONSTANTS = {
+  ANIMATEDLIST_HEIGHT: 180,
+  ANIMATEDLIST_CARDWIDTH: 120,
+  ANIMATEDLIST_BORDERRADIUS: 5,
+};
+
 const Styles = {
   App: {
     container: {
@@ -7,8 +13,28 @@ const Styles = {
     }
   },
   AnimatedList: {
-
+    scrollviewContainer: {
+      height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+    },
+    scrollview: {
+      height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+    },
+    scrollviewContentContainer: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
   },
-}
+  Card: {
+    container: {
+      marginLeft: 10,
+      borderRadius: CONSTANTS.ANIMATEDLIST_BORDERRADIUS,
+    },
+    image: {
+      height: CONSTANTS.ANIMATEDLIST_HEIGHT,
+      width: CONSTANTS.ANIMATEDLIST_CARDWIDTH,
+      borderRadius: CONSTANTS.ANIMATEDLIST_BORDERRADIUS,
+    }
+  }
+};
 
 export default Styles;
